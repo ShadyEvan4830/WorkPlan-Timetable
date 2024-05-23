@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.timetable {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.week {
+    margin-bottom: 20px;
+}
+
+.day {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 4px solid #3498db;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+h2 {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+.phase {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.task {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.task-name {
+    font-weight: bold;
+}
+
+.hours, .completion {
+    font-size: 0.9em;
+    color: #555;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
